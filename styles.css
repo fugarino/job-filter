@@ -20,7 +20,7 @@ body {
 
 .header {
   height: 8rem;
-  width: 100vw;
+  width: 100%;
   background-color: rgb(47, 46, 63);
   position: relative;
   display: flex;
@@ -100,4 +100,80 @@ body {
 .position {
   color: rgb(65, 65, 99);
   font-size: 1.5rem;
+}
+
+.details {
+  display: flex;
+  color: rgb(141, 141, 141);
+}
+
+.contract-div,
+.location,
+.divider {
+  margin-left: 10px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.filter:hover {
+  transform: scale(1.02);
+}
+
+.filter h1 {
+  color: rgb(161, 161, 161);
+  margin-left: 20px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  user-select: none;
+}
+
+.filter-popup-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.filter-popup {
+  height: 25rem;
+  width: 25rem;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  color: rgb(65, 65, 99);
+}
+
+.filter-popup h1 {
+  text-align: center;
+}
+
+.filter-select,
+.role-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter-select {
+  margin-top: 2rem;
+}
+
+.select-badge {
+  margin-left: 10px;
+  background-color: rgb(243, 243, 243);
+  padding: 5px 8px;
+  border-radius: 50px;
+  font-size: 14px;
+  color: rgb(57, 57, 95);
 }
